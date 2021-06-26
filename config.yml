@@ -1,0 +1,16 @@
+title: Full Stack Training
+description: Full Stack Training
+template:
+  repo: full-stack-training-template
+  name: full-stack-training
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
